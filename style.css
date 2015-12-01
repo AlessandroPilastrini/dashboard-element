@@ -1,0 +1,26 @@
+
+html{
+	font-family: sans-serif;
+}
+body{
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+h1, h2, h3, h4{
+	font-weight: normal;
+	margin: 0 auto;
+	text-align: center;
+}
+.wrap{
+	background-color: #F7F7F7;
+}
+.title{
+	padding: 90px 0;
+}
+.chart-wrapper{
+	width: 60%;
+	height: 500px;
+	margin: 0 auto;
+}
