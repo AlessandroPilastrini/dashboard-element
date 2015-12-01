@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   </head>
   <body>
   	<div class="wrap">
@@ -19,7 +18,7 @@
   	<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   	<script type="text/javascript">
 
-  	var inputArray = [[10, 5, [13]],4,[8, [15, null]]];
+  	var inputArray = [[10, 5, [13]],4,[8, [15, 2], null]];
 
 	var arrayToStr = inputArray.toString();
 	var outputArrayInt = arrayToStr.split(',').map(Number); 
@@ -40,7 +39,7 @@
 		   		},
 		   		axisY: {
 		   			onlyInteger: true,
-		   			showGrid: true
+		   			showGrid: false
 		   		}
 		   	}
 		);
