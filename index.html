@@ -3,13 +3,14 @@
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="style.css">
-    
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   </head>
   <body>
   	<div class="wrap">
 	  	<div class="title">
-	  		<h1>WEEKLY TRADES TRAND</h1>
+	  		<h1>WEEKLY SALES REPORT</h1>
+	  		<p>Sales reports are key to helping you gauge how well your company is meeting its sales goals. Weekly reports provide the opportunity to notice downward trends in the sales numbers before they become so low that they can't be brought up to meet quarterly or annual sales predictions. These reports also provide an opportunity to share success or potential problems on a weekly basis, allowing for immediate action if necessary.</p>
 	  	</div>
 	  	<div class="chart-wrapper">
 	  		<div class="ct-chart ct-double-octave"></div>
@@ -18,32 +19,31 @@
   	<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   	<script type="text/javascript">
 
-  	var inputArray = [[10, 5, [13]],4,[3, [13, null]]];
+  	var inputArray = [[10, 5, [13]],4,[8, [15, null]]];
 
 	var arrayToStr = inputArray.toString();
 	var outputArrayInt = arrayToStr.split(',').map(Number); 
 		
 		var chart = new Chartist.Line('.ct-chart', {
-		  labels: ['1', '2', '3', '4', '5', '6', '7'],
+		  labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 		  series: [
 		    outputArrayInt
 		  ]
 		}, {
 		  	low: 0,
-		  	high: 14,
+		  	high: 16,
 		  	fullWidth: false,
 		   	showArea: true,
-		   	axisX: {
-		   		onlyInteger: true,
-		   		showGrid: false,
-		   		showLabel: false
-		   	},
-		   	axisY: {
-		   		onlyInteger: true,
-		   		showGrid: false,
-		   		showLabel: false
+		   		axisX: {
+		   			onlyInteger: true,
+		   			showGrid: true
+		   		},
+		   		axisY: {
+		   			onlyInteger: true,
+		   			showGrid: true
+		   		}
 		   	}
-		});
+		);
 
 		// Let's put a sequence number aside so we can use it in the event callbacks
 		var seq = 0,

@@ -1,26 +1,54 @@
+/*OVERRIDE CSS*/
+.ct-area{
+	fill-opacity: .3;
+}
+.ct-series-a .ct-area{
+	fill: #737373;
+}
+.ct-series-a .ct-line,
+.ct-series-a .ct-point{
+	stroke: #2F7EAD;
+}
+.ct-label.ct-horizontal.ct-end{
+	color: #2F7EAD;
+    font-weight: bold;
+}
+.ct-line{
+	-webkit-stroke-width: 2px;
+	-moz-stroke-width: 2px;
+	-ms-stroke-width: 2px;
+	-o-stroke-width: 2px;
+	stroke-width: 2px;
+}
 
 html{
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 body{
-	background-color: #fff;
+	background-color: #F7F7F7;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 }
 h1, h2, h3, h4{
+	font-weight: bolder;
+	color: #2F7EAD;
 	font-weight: normal;
 	margin: 0 auto;
 	text-align: center;
 }
-.wrap{
-	background-color: #F7F7F7;
+p{  
+	padding-top: 15px;
+	color: #9A9A9A;
+	font-size: 14px;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
 }
 .title{
 	padding: 90px 0;
 }
 .chart-wrapper{
-	width: 60%;
 	height: 500px;
 	margin: 0 auto;
 }
